@@ -1,0 +1,971 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html,body{
+width:100%;
+height:100%;
+overflow:hidden;
+background:#0f0722;
+color:white;
+}
+
+/* ===========================
+   PAGES
+=========================== */
+
+.page{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:none;
+
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
+padding:25px;
+text-align:center;
+}
+
+.page.active{
+display:flex;
+animation:fade .8s ease;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+body{
+
+background:
+
+linear-gradient(
+135deg,
+#15052f,
+#240046,
+#3c096c,
+#5a189a
+);
+
+}
+
+/* ===========================
+   WELCOME PAGE
+=========================== */
+
+#welcome h3{
+
+font-size:18px;
+opacity:.9;
+margin-bottom:18px;
+
+}
+
+#welcome h1{
+
+font-size:48px;
+font-weight:700;
+
+margin-bottom:8px;
+
+}
+
+#welcome h2{
+
+font-size:34px;
+
+color:#ffb3e6;
+
+margin-bottom:20px;
+
+}
+
+#welcome p{
+
+font-size:18px;
+
+line-height:1.8;
+
+max-width:340px;
+
+opacity:.95;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+margin-top:35px;
+
+padding:16px 40px;
+
+border:none;
+
+border-radius:60px;
+
+background:#ff4fa8;
+
+color:white;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+box-shadow:
+0 0 20px rgba(255,79,168,.45);
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+0 0 35px rgba(255,79,168,.8);
+
+}
+
+button:active{
+
+transform:scale(.96);
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.photoCard{
+
+width:95%;
+
+max-width:430px;
+
+padding:22px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+box-shadow:
+0 0 35px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.photoCard img{
+
+width:100%;
+
+height:430px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+margin-bottom:18px;
+
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.photoCard h2{
+
+font-size:28px;
+
+margin-bottom:12px;
+
+color:#ffd4ef;
+
+}
+
+.photoCard p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+/* ===========================
+   FADE
+=========================== */
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ===========================
+   COUNTDOWN PAGE
+=========================== */
+
+#countdownPage{
+    background:linear-gradient(135deg,#12002f,#28004d,#43006f);
+}
+
+#countNumber{
+    font-size:140px;
+    font-weight:700;
+    color:#fff;
+    text-shadow:
+        0 0 20px #ff66cc,
+        0 0 50px #ff66cc,
+        0 0 90px #ff66cc;
+    animation:pop 1s infinite;
+}
+
+@keyframes pop{
+
+0%{
+transform:scale(.6);
+opacity:.2;
+}
+
+50%{
+transform:scale(1.2);
+opacity:1;
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+/* ===========================
+   STORY PAGE
+=========================== */
+
+#storyPage{
+
+background:linear-gradient(
+135deg,
+#14042c,
+#250046,
+#46006b
+);
+
+}
+
+.photoCard{
+
+animation:cardFade .7s ease;
+
+}
+
+@keyframes cardFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===========================
+   PHOTO
+=========================== */
+
+#photo{
+
+transition:.45s;
+
+box-shadow:
+0 0 25px rgba(255,255,255,.18);
+
+}
+
+#photo:hover{
+
+transform:scale(1.02);
+
+}
+
+/* ===========================
+   NOTE
+=========================== */
+
+#note{
+
+margin-top:12px;
+
+margin-bottom:20px;
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#f7eaff;
+
+}
+
+/* ===========================
+   NEXT BUTTON
+=========================== */
+
+#nextBtn{
+
+width:100%;
+
+margin-top:10px;
+
+background:linear-gradient(
+90deg,
+#ff4fa8,
+#ff7cc8
+);
+
+}
+
+#nextBtn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ===========================
+   LETTER PAGE
+=========================== */
+
+#letterPage{
+
+background:linear-gradient(
+135deg,
+#19003d,
+#36005f,
+#5a189a
+);
+
+}
+
+#letterPage h1{
+
+font-size:70px;
+
+margin-bottom:15px;
+
+}
+
+#letterPage h2{
+
+font-size:36px;
+
+color:#ffd6ef;
+
+margin-bottom:20px;
+
+}
+
+#finalLetter{
+
+max-width:500px;
+
+font-size:18px;
+
+line-height:2;
+
+background:rgba(255,255,255,.08);
+
+padding:22px;
+
+border-radius:20px;
+
+backdrop-filter:blur(10px);
+
+}
+
+/* ===========================
+   CELEBRATION PAGE
+=========================== */
+
+#celebrationPage{
+
+background:linear-gradient(
+135deg,
+#21003d,
+#4a0072,
+#7400b8
+);
+
+}
+
+#celebrationPage h1{
+
+font-size:55px;
+
+margin-bottom:15px;
+
+animation:glow 2s infinite;
+
+}
+
+#celebrationPage h2{
+
+font-size:38px;
+
+color:#ffd4ef;
+
+margin-bottom:20px;
+
+}
+
+#celebrationPage p{
+
+font-size:20px;
+
+line-height:2;
+
+max-width:500px;
+
+}
+
+@keyframes glow{
+
+0%{
+
+text-shadow:
+0 0 10px #fff;
+
+}
+
+50%{
+
+text-shadow:
+0 0 30px #ff66cc,
+0 0 60px #ff66cc;
+
+}
+
+100%{
+
+text-shadow:
+0 0 10px #fff;
+
+}
+
+}
+/* ===========================
+   FLOATING HEARTS
+=========================== */
+
+#hearts{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:1;
+
+}
+
+.heart{
+
+position:absolute;
+
+bottom:-60px;
+
+font-size:24px;
+
+animation:floatHeart linear forwards;
+
+opacity:.8;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:
+translateY(0)
+scale(.5)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+scale(1.4)
+rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+/* ===========================
+   SPARKLES
+=========================== */
+
+.sparkle{
+
+position:absolute;
+
+width:8px;
+
+height:8px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+0 0 12px white;
+
+animation:sparkle 2s infinite;
+
+}
+
+@keyframes sparkle{
+
+0%{
+
+opacity:0;
+transform:scale(.2);
+
+}
+
+50%{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+100%{
+
+opacity:0;
+transform:scale(.2);
+
+}
+
+}
+
+/* ===========================
+   CARD HOVER
+=========================== */
+
+.photoCard{
+
+transition:.35s;
+
+}
+
+.photoCard:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:
+
+0 0 40px rgba(255,105,180,.35);
+
+}
+
+/* ===========================
+   IMAGE ANIMATION
+=========================== */
+
+#photo{
+
+animation:photoShow .7s ease;
+
+}
+
+@keyframes photoShow{
+
+from{
+
+opacity:0;
+
+transform:
+scale(.9);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+scale(1);
+
+}
+
+}
+
+/* ===========================
+   BUTTON ANIMATION
+=========================== */
+
+button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:100%;
+height:100%;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transition:.7s;
+
+}
+
+button:hover::before{
+
+left:120%;
+
+}
+
+/* ===========================
+   LETTER BOX
+=========================== */
+
+#finalLetter{
+
+animation:fadeLetter 1s ease;
+
+}
+
+@keyframes fadeLetter{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(25px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0);
+
+}
+
+}
+
+/* ===========================
+   CELEBRATION
+=========================== */
+
+#celebrationPage{
+
+animation:celebrate 1.2s ease;
+
+}
+
+@keyframes celebrate{
+
+from{
+
+opacity:0;
+
+transform:
+scale(.92);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+scale(1);
+
+}
+
+}
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:768px){
+
+#welcome h1{
+font-size:38px;
+}
+
+#welcome h2{
+font-size:28px;
+}
+
+#welcome p{
+font-size:16px;
+}
+
+.photoCard{
+
+width:92%;
+
+padding:18px;
+
+}
+
+.photoCard img{
+
+height:360px;
+
+}
+
+#countNumber{
+
+font-size:110px;
+
+}
+
+#letterPage h2{
+
+font-size:30px;
+
+}
+
+#celebrationPage h1{
+
+font-size:42px;
+
+}
+
+#celebrationPage h2{
+
+font-size:30px;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:430px){
+
+.photoCard img{
+
+height:300px;
+
+}
+
+button{
+
+width:100%;
+
+font-size:17px;
+
+padding:15px;
+
+}
+
+#countNumber{
+
+font-size:90px;
+
+}
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff69b4;
+
+border-radius:10px;
+
+}
+
+/* ===========================
+   TEXT SELECTION
+=========================== */
+
+::selection{
+
+background:#ff69b4;
+
+color:white;
+
+}
+
+/* ===========================
+   FLOATING BACKGROUND
+=========================== */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:-50%;
+left:-50%;
+
+width:200%;
+height:200%;
+
+background:
+radial-gradient(circle,
+rgba(255,255,255,.05),
+transparent 60%);
+
+animation:bgRotate 35s linear infinite;
+
+pointer-events:none;
+
+z-index:0;
+
+}
+
+@keyframes bgRotate{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ===========================
+   PAGE LAYER
+=========================== */
+
+.page{
+
+z-index:2;
+
+}
+
+/* ===========================
+   FOOTER TEXT
+=========================== */
+
+.signature{
+
+position:fixed;
+
+bottom:15px;
+
+width:100%;
+
+text-align:center;
+
+font-size:13px;
+
+opacity:.55;
+
+letter-spacing:1px;
+
+}
+
+/* ===========================
+   END
+=========================== */
